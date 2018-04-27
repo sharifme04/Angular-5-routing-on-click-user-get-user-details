@@ -1,0 +1,9 @@
+
+<div class="row">
+  <div class="col-sm-9">
+    <user-details *ngIf="selectedUser" [user] ="selectedUser"></user-details>
+  </div>
+  <div class="col-sm-3">
+    <user-list (SelectUser)="onSelectUser($event)" [users]="users"></user-list>
+  </div>
+</div>
